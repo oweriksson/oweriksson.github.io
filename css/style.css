@@ -1,0 +1,57 @@
+  #wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  body{
+    height: 100%;
+    background-image: url("abstractlandscape.png");
+    margin: 2;
+    padding: 0;
+    font-size: 100%;
+    font-family: "Arial", sans-serif;
+  }
+  header{
+    position: static;
+    height: 150px;
+   /* width: 800px; */
+    background-color: white;
+  }
+  nav{
+    position: static;
+    background-color: beige;
+    height: 75px;
+    /* text-align: center;
+    vertical-align: center; */
+    line-height: 75px;
+    /* width: 800px; */
+  }
+  main{
+    background-color: blue;
+    height: 450px;
+    width: 75%;
+  }
+  aside{
+    background-color: yellow;
+    height: 450px;
+    width: 25%;
+    left: 600px;
+  }
+  footer{
+    position: static;
+    background-color: red;
+    height: 100px;
+    width: 100%;
+  }
+  #container{
+    display: flex;
+  }
+  #navLink {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    background: white;
+    vertical-align: center;
+    margin: 5px;
+  }
