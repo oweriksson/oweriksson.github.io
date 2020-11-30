@@ -1,0 +1,125 @@
+<!DOCTYPE html> <!-- Berättar för webbläsaren att koden är html5 -->
+<html lang="sv" dir="ltr">
+<!-- Språk samt left -> right -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Berättar vilken teckenkodning som används -->
+
+  <title>Hem</title> <!-- Text uppe på hemsidans flik -->
+
+  <link rel="stylesheet" type="text/css" href="/css/text-style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css"> <!-- Refererar till stylesheet (css/style.css) -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <!-- Detta är en extra navigation längst överst på sidan, aktiveras vid behov.
+        <div id="topNav">
+          <a id="topNavLink" href="http://www.splexserver.se">Splex</a>
+
+          <div id="rightTopNav">
+          <a id="topNavLink" href="http://www.google.se">Login</a>
+          </div>
+        </div>
+      -->
+
+    <header>
+      Datorns uppbyggnad
+    </header>
+
+    <nav>
+      <a id="navLink" href="\index.html">HEM</a>
+      <a id="navLink" href="\guide.html">GUIDE</a>
+
+      <div id="rightNav">
+        <a id="navLink" href="\info-kontakt.html">INFO/KONTAKT</a>
+      </div>
+  </div>
+  </nav>
+
+  <div id="container">
+    <!-- Dessa sätts i grupp så att man kan använda "flex" -->
+    <div id="asideContainer">
+      <div id="asideHeader">
+        Komponenter:
+      </div>
+      <aside>
+        <a id="asideNav" href="moderkort.html">- Moderkort</a>
+        <br>
+        <a id="asideSubNav" href="cpu.html">- Processor/CPU</a>
+        <br>
+        <a id="asideSubNav" href="ram.html">- Internminne/RAM</a>
+        <br>
+        <a id="asideNav" href="pcie.html">- PCI-E Kort</a>
+        <br>
+        <a id="asideSubNav" href="gpu.html">- Grafikkort/GPU</a>
+        <br>
+        <a id="asideSubNav" href="sc.html">- Ljudkort/SC</a>
+        <br>
+        <a id="asideNav" href="psu.html">- Nätaggregat/PSU</a>
+        <br>
+        <a id="asideNav" href="lagring.html">- Lagring</a>
+        <br>
+        <a id="asideSubNav" href="os.html">- Mjukvara & operativsystem</a>
+      </aside>
+    </div>
+
+    <main>
+      <h1>Grafikkort/GPU</h1>
+      <p class="textType1">De flesta datoranvändare behöver inte ett dedikerat grafikkort. Man klarar sig långt med de
+        inbyggda grafikkretsar i datorns <a href="moderkort.html">moderkort</a> och <a href="cpu.html">processor</a>. Men ibland har dessa komponenter ingen inbyggd grafik
+        eller så behöver man ett mer kraftfullt alternativ.
+        Därför är grafikkortet en av de viktigaste komponenter i en speldator.
+      </p>
+      <h2>Prestanda</h2>
+      <p class="textType1">
+        Även fast det finns massvis med faktorer som avgör hur bra ett grafikkort faktiskt är. Så säger priset, till
+        skillnad från andra komponenter, mycket om prestandan. Högre pris ger alltså oftast generellt högre prestanda.
+        Vill man vara säker på att kortet man hittat fungerar bra med resten av dina datortillbehör, finns det tusentals
+        prestandaindex på internet som man kan använda sig av för att jämföra prestandan hos olika kort i olika
+        upplösningar. En rekommendation är <a
+          href="https://www.sweclockers.com/artikel/18402-sweclockers-prestandaindex-for-grafikkort">denna artikel</a>
+        på sweclockers
+        hemsida där du kan hitta resultat och jämförelser på de senaste korten.
+      </p>
+      <h2>Formfaktor</h2>
+      <p class="textType1">Andra saker att tänka på däremot, är grafikkortets dimensioner. Är den för stor kan den möjligtvis täcka över
+      andra komponenter och kontakter på <a href="moderkort.html">moderkortet</a> eller inte få plats alls i <a href="chassi.html">chassit</a>.
+      </p>
+
+      <h3>Strömförsörjning</h3>
+      <p class="textType1">Vid köp av ett mer kraftfullt grafikkort är det även viktigt att datorns <a href="psu.html">nätaggregat</a> är av en högre kvalité och
+      klarar av all effekt som dras. Nya grafikkort från AMD och Nvidia som Big Navi- och 3000 serien, kan kräva en
+      högre effekt p.g.a.eventuella spikar i strömförbrukningen. För att göra valet lätt för konsumenter finns det
+      därför redan bra rekommendationer från tillverkaren. Läs mer <a href="psu.html">här</a>.
+      </p>
+
+      <h3>Kontakter</h3>
+      <p class="textType1">
+      För att undvika att köpa adaptrar för dina videokablar, är det bra att se till att grafikkortet har samma
+      video-portar som din(a) skärm(ar). De vanligaste är DP(DisplayPort), vilket används för högre upplösning och
+      bildfrekvens, HDMI och DVI.
+
+      För att monteras i datorn och för att kunna kommunicera med resten av datorn ansluts grafikkortet till moderkortet
+      genom en PCI-E x16 kontakt vilket är mycket vanligt på moderna moderkort.
+      </p>
+
+      <p class="sourceType1">Källa: <a href="https://www.inet.se/kampanj/3413/grafikkort">https://www.inet.se/kampanj/3413/grafikkort</a></p>
+    </main>
+  </div>
+
+  <footer>
+    Footer
+    <!--
+          <p>Skapare: <i>Oscar Eriksson</i> (<a href="http://www.splexserver.se">Hemsida</a>)</p>
+          <p><i>Senast Uppdaterad: 20201005</i></p>
+          -->
+  </footer>
+  </div>
+</body>
+
+</html>

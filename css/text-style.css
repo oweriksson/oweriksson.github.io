@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    }
+h2{
+    margin-left: 10px;
+}
+h3{
+    margin-left: 10px;
+}
+.textType1{
+    color: black;
+    margin: 10px;
+}
+.sourceType1{
+    margin-left: 10px;
+    margin-top: 20px;
+    color: rgb(34, 34, 34);
+    font-style: italic;
+}
