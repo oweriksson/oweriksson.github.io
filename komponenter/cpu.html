@@ -7,6 +7,7 @@
 
   <title>Hem</title> <!-- Text uppe på hemsidans flik -->
 
+  <link rel="stylesheet" type="text/css" href="/css/text-style.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css"> <!-- Refererar till stylesheet (css/style.css) -->
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -47,37 +48,132 @@
         Komponenter:
       </div>
       <aside>
-        <a id="asideNav" href="moderkort.html">- Moderkort</a>
+        <a id="asideNav" href="/komponenter/chassi.html">- Chassi</a>
         <br>
-        <a id="asideSubNav" href="cpu.html">- Processor/CPU</a>
+        <a id="asideNav" href="moderkort.html">- Moderkort</a>
         <br>
         <a id="asideSubNav" href="ram.html">- Internminne/RAM</a>
         <br>
-        <a id="asideNav" href="pcie.html">- PCI-E Kort</a>
+        <a id="asideSubNav" href="cpu.html">- Processor/CPU</a>
         <br>
         <a id="asideSubNav" href="gpu.html">- Grafikkort/GPU</a>
         <br>
-        <a id="asideSubNav" href="sc.html">- Ljudkort/SC</a>
-        <br>
-        <a id="asideNav" href="psu.html">- Nätaggregat/PSU</a>
-        <br>
         <a id="asideNav" href="lagring.html">- Lagring</a>
         <br>
-        <a id="asideSubNav" href="os.html">- Mjukvara & operativsystem</a>
+        <a id="asideNav" href="psu.html">- Nätaggregat/PSU</a>
       </aside>
     </div>
 
     <main>
-      https://www.google.com/imgres?imgurl=https%3A%2F%2Fstorage.needpix.com%2Frsynced_images%2Fmotherboard-707777_1280.jpg&imgrefurl=https%3A%2F%2Fwww.needpix.com%2Fphoto%2F353515%2Fmotherboard-cpu-socket&tbnid=yeZHQkNU6lYmpM&vet=12ahUKEwjZwoSur5jtAhWEzyoKHR-EAMEQMygNegUIARD4Ag..i&docid=LGnOVaybG6ZUAM&w=1280&h=956&q=motherboard&hl=sv&ved=2ahUKEwjZwoSur5jtAhWEzyoKHR-EAMEQMygNegUIARD4Ag
+      <h1>Processor/CPU</h1>
+      <p class="textType2">CPU:n(Central Processing Unit), datorns hjärna, har i uppgift att utföra alla logiska
+        beräkningar och kommandon (e.v. förutom <a href="/komponenter/gpu.html">grafikkortets</a> grafiska
+        beräkningar). Processorn är är speciellt viktig i
+        datorer som använder ritningsprogram som CAD.
+      </p>
+      <div id="leftRight">
+        <div id="leftPart">
+          <h2>Arkitekturer</h2>
+          <p class="textType1">
+            Olika processorer använder sig av olika “språk” när den beräknar. Det finns två olika “språk” eller
+            arkitekturer, ARM och x86. Dessa finns båda i sin tur i 32-bitars och 64-bitars versioner.
+          </p>
+          <p class="textType1">
+            ARM (Advanced RISC Machine är den mer energisnäla variationen och används därför i mindre enheter med
+            batterier
+            som mobiler med android och iOS.
+          </p>
+          <p class="textType1">
+            x86 har mycket bättre prestanda jämfört med ARM arkitekturen, men innebär även att strömförbrukningen blir
+            högre. Dessa används därför främst i datorer. De största tillverkarna av x86 processorer är Intel och AMD.
+            Under
+            åren har de utvecklat teknologin och gått ifrån 32bitar(x86) till 64bitar(x64).
+          </p>
+        </div>
+        <div id="rightPart">
+          <div id="rightPart">
+            <img src="/img/genericcpu.jpg" alt="Processor" style="width: 400px;">
+            <br>
+            "<a target="_blank" href="https://pixy.org/103117/"><i>CPU circuit</i></a>", av <i><a target="_blank"
+                href="https://pixy.org/author/Raeann_Buskey/">Reann Buskey</a></i>, licensierad under <a target="_blank"
+              href="https://creativecommons.org/publicdomain/zero/1.0/deed.sv">CC0</a>
+          </div>
+        </div>
+      </div>
+      <h2>Hastighet</h2>
+      <p class="textType1">
+        Processorns hastighet mäts i hertz, man skulle kunna kalla detta för processorns puls som tillåter beräkningar
+        att
+        utföras. En processor som ligger på 2,0 GHz och utför en beräkning för varje klockcykel som går hinner alltså
+        göra
+        2 miljarder beräkningar under en sekund.
+      </p>
+      <h2>Cache</h2>
+      <p class="textType1">Detta är processorns egna minne som finns för att effektivisera åtkomsten till information om
+        processorns kommande
+        beräkningar/uppgifter. Då slipper nämligen datan komma ända från ram-minnet till processorn. Den vanliga
+        benämningen av cache-lagren är L1, L2 och L3. Skillnaderna ligger främst i åtkomsttid och storlek (alla
+        processorer har inte alla lager).
+        Att använda cache istället för ram är mycket snabbare, men även extremt mycket dyrare. Därför har endast
+        premium-processorer högre cache och är.</p>
+
+      <h2>Kärnor</h2>
+      <p class="textType1">Processorn delas upp i kärnor (cores) för att kunna utföra fler beräkningar samtidigt. Man
+        har testat med
+        hyperthreading, vilket simulerar två kärnor istället för en, men som inte riktigt fungerar lika bra som att ha
+        flera kärnor. Så har man många kärnor, blir det snabbare? Ja, men bara ibland. För att kunna nyttja kraften av
+        flera kärnor, krävs det att programmet man kör stödjer det och är programmerat på så sätt att det kan dela upp
+        uträkningarna till så många kärnor. De olika processorer med de olika mängderna kärnor benämns: Single(1)-,
+        Dual(2)-, Tripple(3)-, Quad(4)-, Hexa(5)- och Octa(8) Core.</p>
+      </p>
+
+      <div id="leftRight">
+        <div id=leftPart>
+          <h2>Inför köp</h2>
+          <p class="textType1">Det finns både små och stora skillnader mellan processorer och därför är det viktigt att
+            man vet vad man kommer använda datorn till så att man vet vilken som passar en själv.
+          </p>
+          <p class="textType1">
+            I en viss budget har man kanske inte råd med, eller så behöver man inte ett dedikerat <a
+              href="/komponenter/gpu.html">grafikkortets</a> för det man ska göra.
+            Då har man möjligheten att köpa en processor med inbyggd grafik, däremot kommer prestanda i spel inte komma
+            nära
+            samma prestanda som ett dedikerat <a href="/komponenter/gpu.html">grafikkortets</a> kan erbjuda.
+          </p>
+          <p class="textType1">
+            Behöver man mycket processorkraft till krävande program som CAD, videoredigerare eller bara en framtidssäker
+            produkt, kan en Intel i7 vara ett bra val. Annars klarar sig de allra flesta bra på en i5 eller AMD ryzen 5.
+            Däremot om du endast ska använda datorn till att surfa eller skriva dokument är processorn inget att oroa
+            sig
+            över.
+          </p>
+        </div>
+        <div id=rightPart>
+          <img src="/img/mbwcpusocket.jpg" alt="CPU socket på ett moderkort" style="width: 400px;">
+          <br>
+          "<a target="_blank" href="https://pixy.org/103008/"><i>Motherboard with CPU socket</i></a>", av <i><a
+              target="_blank" href="https://pixy.org/author/Patrick_Mcquarrie/">Patrick Mcquarrie</a></i>, licensierad under <a
+            target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.sv">CC0</a>
+        </div>
+      </div>
+      <p class="textType1">
+        En enkel tumregel är att även välja en nyare och bättre generation med även en rimlig klockfrekvens. Är man
+        fortfarande osäker på vilken processor man ska skaffa, finns det index för processorer som jämför dem hur de
+        presterar under olika belastningar. Ett simpelt sådant finns på <a target="_blank"
+          href="https://cpu.userbenchmark.com">userbenchmarks hemsida</a> där man lätt kan jämföra.
+          </p>
+      <p class="sourceType1">Källor:
+        <a target="_blank"
+          href="https://www.netonnet.se/content/info/processor">https://www.netonnet.se/content/info/processor</a>
+        <br>
+        <a target="_blank"
+          href="https://www.kjell.com/se/kunskap/hur-funkar-det/dator/datorns-huvudkomponenter/processorn">https://www.kjell.com/se/kunskap/hur-funkar-det/dator/datorns-huvudkomponenter/processorn</a>
+      </p>
     </main>
   </div>
 
   <footer>
-    Footer
-    <!--
-          <p>Skapare: <i>Oscar Eriksson</i> (<a href="http://www.splexserver.se">Hemsida</a>)</p>
-          <p><i>Senast Uppdaterad: 20201005</i></p>
-          -->
+    <p>Skapad av: <i>Oscar Eriksson</i> | Uppdaterad: <i>2020-11-30</i></p>
   </footer>
   </div>
 </body>

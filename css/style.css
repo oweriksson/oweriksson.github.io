@@ -2,7 +2,7 @@
     width: 100%;
   }
   body{
-    height: 2000px;
+    height: 100%;
     background-color: white;
     /*background-image: url("https://media.istockphoto.com/photos/computer-board-hardware-motherboard-microelectronics-server-cpu-chip-picture-id958956392?b=1&k=6&m=958956392&s=170667a&w=0&h=jb8mhgLLj3HLR4PAhVo-xmhDTHIaeZ8pdAhHWktbVHc=");*/
     margin: 0;
@@ -12,14 +12,15 @@
   }
   header{
     position: static;
-    margin: 8px;
+    margin: px;
    /* height: 100px; */
    /* width: 800px; */
-    background-color: white;
+    /*background-color: white;
     text-align: center;
     font-size: 40px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 20px; */
+    height: 0px;
   }
   nav{
     position: static;
@@ -33,11 +34,14 @@
   }
   main{
     background-color: white;
-    height: 1000px;
+    height: 1350px;
     width: 75%;
     margin-left: 8px;
     margin-right: 8px;
     font-family: Arial, Helvetica, sans-serif;
+  }
+  a{
+    color: rgb(230, 18, 18);
   }
   #asideHeader{
     background-color: rgb(192, 48, 48);
@@ -51,7 +55,7 @@
   }
   aside{
     background-color: rgb(207, 207, 207);
-    height: 1000px;
+    height: 1250px;
     left: 600px;
     padding-left: 5px;
     padding-top: 10px;
@@ -61,7 +65,9 @@
     color: white;
     background-color: rgb(37, 37, 37);
     height: 100px;
-    margin-top: 8px;
+    margin-top: 0px;
+    text-align: center;
+    line-height: 100px;
   }
   #container{
     display: flex;
@@ -88,14 +94,14 @@
     text-decoration: none;
     line-height: 25px;
     margin-left: 6px;
-    background-color: grey;
+    /*background-color: grey;*/
   }
   #asideSubNav:hover{
     color: black;
     text-decoration: none;
     line-height: 25px;
     margin-left: 6px;
-    background-color: grey;
+    /*background-color: grey;*/
   }
   #topNav{
     background-color: black;

@@ -7,6 +7,7 @@
 
   <title>Hem</title> <!-- Text uppe på hemsidans flik -->
 
+  <link rel="stylesheet" type="text/css" href="/css/text-style.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css"> <!-- Refererar till stylesheet (css/style.css) -->
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -47,37 +48,68 @@
         Komponenter:
       </div>
       <aside>
-        <a id="asideNav" href="moderkort.html">- Moderkort</a>
+        <a id="asideNav" href="/komponenter/chassi.html">- Chassi</a>
         <br>
-        <a id="asideSubNav" href="cpu.html">- Processor/CPU</a>
+        <a id="asideNav" href="moderkort.html">- Moderkort</a>
         <br>
         <a id="asideSubNav" href="ram.html">- Internminne/RAM</a>
         <br>
-        <a id="asideNav" href="pcie.html">- PCI-E Kort</a>
+        <a id="asideSubNav" href="cpu.html">- Processor/CPU</a>
         <br>
         <a id="asideSubNav" href="gpu.html">- Grafikkort/GPU</a>
         <br>
-        <a id="asideSubNav" href="sc.html">- Ljudkort/SC</a>
-        <br>
-        <a id="asideNav" href="psu.html">- Nätaggregat/PSU</a>
-        <br>
         <a id="asideNav" href="lagring.html">- Lagring</a>
         <br>
-        <a id="asideSubNav" href="os.html">- Mjukvara & operativsystem</a>
+        <a id="asideNav" href="psu.html">- Nätaggregat/PSU</a>
       </aside>
     </div>
 
     <main>
-      Välkommen till 
+      <h1>Lagring</h1>
+      <p class="textType2">
+        På dessa komponenter lagras operativsystem, drivrutiner och personliga filer. Det finns massvis med olika sätt
+        att lagra data på, men de mest använda idag är hårddiskar (HDD - Hard Disk
+        Drive)
+        och SSD (Solid State Drive). Hårddiskar har funnits länge och är mer prisvärda än SSD diskar vid högre storlekar.
+      </p>
+      <div id="leftRight">
+        <div id="leftPart">
+      <h2>Formfaktor & Funktion</h2>
+      <p class="textType1">
+        All data lagras som 1:or och 0:or, hårddiskar gör detta på så vis att datan mekaniskt skrivs på en disk som
+        roterar samtidigt som ett metallhuvud skriver på den. Hårddiskar är mekaniska och innehåller därför känsliga
+        rörliga delar. P.g.a. detta är hastigheten på hårddiskar hyfsat begränsat. Hastigheten mäts här i RPM, vilket
+        kan
+        variera mellan 5400RPM till 10000RPM vilket betyder att disken inuti kan spinna upp till 10000 per minut. Ju
+        högre
+        RPM, ju mer spinner disken, ju mer kan skrivas/läsas på disken på 1 minut. Cache kan också förbättra hastigheten
+        drastiskt, ju mer cache minne, desto snabbare blir det.
+      </p>
+      <p class="textType1">
+        SSD är hårddiskens ersättare innehåller inga rörliga delar och bygger på samma teknik som usb-stickor använder.
+        P.g.a. att den inte innehåller några rörliga delar. Vissa SSD-diskar kan därför vara 3 gånger snabbare än en
+        mekanisk hårddisk.
+      </p>
+      </div>
+      <div id="rightPart">
+        <img src="/img/harddrive.jpg" alt="Inuti en hårddisk" style="width: 400px;">
+          <br>
+          "<a target="_blank" href="https://pixy.org/4766212/"><i>Shiny drive in the motherboard</i></a>", av <i><a
+              target="_blank" href="https://pixy.org/author/Karon_Magwood/">Karon Magwood</a></i>, licensierad under <a
+            target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.sv">CC0</a>
+      </div>
+      </div>
+
+      <p class="sourceType1">
+        Källor: <a target="_blank"
+          href="https://www.kjell.com/se/kunskap/hur-funkar-det/dator/lagringsmedia/harddiskar-och-ssd-diskar">https://www.kjell.com/se/kunskap/hur-funkar-det/dator/lagringsmedia/harddiskar-och-ssd-diskar</a>
+          <br><a target="_blank" href="https://www.netonnet.se/content/info/ssd">https://www.netonnet.se/content/info/ssd</a>
+        </p>
     </main>
   </div>
 
   <footer>
-    Footer
-    <!--
-          <p>Skapare: <i>Oscar Eriksson</i> (<a href="http://www.splexserver.se">Hemsida</a>)</p>
-          <p><i>Senast Uppdaterad: 20201005</i></p>
-          -->
+    <p>Skapad av: <i>Oscar Eriksson</i> | Uppdaterad: <i>2020-11-30</i></p> 
   </footer>
   </div>
 </body>

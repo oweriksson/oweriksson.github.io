@@ -11,9 +11,40 @@ h3{
     color: black;
     margin: 10px;
 }
+.textType2{
+    color: black;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.list1{
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.list2{
+    color: black;
+    margin: 20px;
+    font-weight: normal;
+}
+.Lista{
+    width: 50%;
+}
+#leftPart{
+    width: 50%;
+}
+#rightPart{
+    display: block;
+    margin: auto;
+    font-size: 12px;
+}
+#leftRight{
+    display: flex;
+}
 .sourceType1{
     margin-left: 10px;
     margin-top: 20px;
     color: rgb(34, 34, 34);
     font-style: italic;
+    line-height: 25px;
 }

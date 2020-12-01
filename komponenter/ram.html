@@ -7,6 +7,7 @@
 
   <title>Hem</title> <!-- Text uppe på hemsidans flik -->
 
+  <link rel="stylesheet" type="text/css" href="/css/text-style.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css"> <!-- Refererar till stylesheet (css/style.css) -->
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -47,37 +48,68 @@
         Komponenter:
       </div>
       <aside>
-        <a id="asideNav" href="moderkort.html">- Moderkort</a>
+        <a id="asideNav" href="/komponenter/chassi.html">- Chassi</a>
         <br>
-        <a id="asideSubNav" href="cpu.html">- Processor/CPU</a>
+        <a id="asideNav" href="moderkort.html">- Moderkort</a>
         <br>
         <a id="asideSubNav" href="ram.html">- Internminne/RAM</a>
         <br>
-        <a id="asideNav" href="pcie.html">- PCI-E Kort</a>
+        <a id="asideSubNav" href="cpu.html">- Processor/CPU</a>
         <br>
         <a id="asideSubNav" href="gpu.html">- Grafikkort/GPU</a>
         <br>
-        <a id="asideSubNav" href="sc.html">- Ljudkort/SC</a>
-        <br>
-        <a id="asideNav" href="psu.html">- Nätaggregat/PSU</a>
-        <br>
         <a id="asideNav" href="lagring.html">- Lagring</a>
         <br>
-        <a id="asideSubNav" href="os.html">- Mjukvara & operativsystem</a>
+        <a id="asideNav" href="psu.html">- Nätaggregat/PSU</a>
       </aside>
     </div>
 
     <main>
-      Välkommen till 
+      <h1>Internminne/RAM</h1>
+      <p class="textType2">RAM-minnet (Random Access Memory) används för att lagra temporär data som <a
+          href="/komponenter/cpu.html">processorn</a> arbetar
+        med för att snabbare
+        komma åt och ändra den. Till exempel när datorn startas flyttas de viktigaste delarna från operativsystemet över
+        till ram minnet.
+      </p>
+      <div id="leftRight">
+        <div id="leftPart">
+          <h2>Formfaktor & Funktion</h2>
+          <p class="textType1">Dagens minnen har olika storlekar, den genomsnittliga konsumenten använder allt mellan
+            4gb
+            och 32gb. Det minsta
+            windows kräver är 2gb men för att kunna använda det någorlunda felfritt krävs ca 4gb. En bra rekommendation
+            är
+            däremot 8gb. En speldator skulle idag behöva 16gb och för en dator avsedd för produktion som
+            ritningsprogram,
+            videoredigering etc. borde man gå för 32gb eller högre beroende på hur krävande programmen är. Ju högre
+            storlek,
+            ju mer blir möjligt att göras samtidigt.
+          </p>
+          <p class="textType1">
+            DDR4 är den nyaste tekniken inom internminnen, alla DDR4 minnen kan anslutas på moderna <a
+              href="/komponenter/moderkort.html">moderkort</a> med samma
+            anslutning.
+            Hastigheten av internminnen mäts i Mhz och DDR4 minnen har en effektiv frekvens på minst 2133MHz.
+          </p>
+        </div>
+        <div id="rightPart">
+          <img src="/img/ramsticks.jpg" alt="Internminnen" style="width: 400px;">
+          <br>
+          "<a target="_blank" href="https://pixy.org/378144/"><i>Memory chips</i></a>", av <i><a target="_blank"
+              href="https://pixy.org/author/Jeneva_Stiles/">Jeneva Stiles</a></i>, licensierad under <a target="_blank"
+            href="https://creativecommons.org/publicdomain/zero/1.0/deed.sv">CC0</a>
+        </div>
+      </div>
+      <p class="sourceType1">
+        Källa: <a target="_blank"
+          href="https://www.kjell.com/se/kunskap/hur-funkar-det/dator/datorns-huvudkomponenter/ram-minnet">https://www.kjell.com/se/kunskap/hur-funkar-det/dator/datorns-huvudkomponenter/ram-minnet</a>
+      </p>
     </main>
   </div>
 
   <footer>
-    Footer
-    <!--
-          <p>Skapare: <i>Oscar Eriksson</i> (<a href="http://www.splexserver.se">Hemsida</a>)</p>
-          <p><i>Senast Uppdaterad: 20201005</i></p>
-          -->
+    <p>Skapad av: <i>Oscar Eriksson</i> | Uppdaterad: <i>2020-11-30</i></p>
   </footer>
   </div>
 </body>

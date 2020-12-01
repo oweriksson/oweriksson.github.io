@@ -7,6 +7,7 @@
 
   <title>Hem</title> <!-- Text uppe på hemsidans flik -->
 
+  <link rel="stylesheet" type="text/css" href="/css/text-style.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css"> <!-- Refererar till stylesheet (css/style.css) -->
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -47,37 +48,88 @@
         Komponenter:
       </div>
       <aside>
-        <a id="asideNav" href="moderkort.html">- Moderkort</a>
+        <a id="asideNav" href="/komponenter/chassi.html">- Chassi</a>
         <br>
-        <a id="asideSubNav" href="cpu.html">- Processor/CPU</a>
+        <a id="asideNav" href="moderkort.html">- Moderkort</a>
         <br>
         <a id="asideSubNav" href="ram.html">- Internminne/RAM</a>
         <br>
-        <a id="asideNav" href="pcie.html">- PCI-E Kort</a>
+        <a id="asideSubNav" href="cpu.html">- Processor/CPU</a>
         <br>
         <a id="asideSubNav" href="gpu.html">- Grafikkort/GPU</a>
         <br>
-        <a id="asideSubNav" href="sc.html">- Ljudkort/SC</a>
-        <br>
-        <a id="asideNav" href="psu.html">- Nätaggregat/PSU</a>
-        <br>
         <a id="asideNav" href="lagring.html">- Lagring</a>
         <br>
-        <a id="asideSubNav" href="os.html">- Mjukvara & operativsystem</a>
+        <a id="asideNav" href="psu.html">- Nätaggregat/PSU</a>
       </aside>
     </div>
 
     <main>
-      Välkommen till 
+      <h1>Nätaggregat</h1>
+      <p class="textType2">PSU:n(Power Supply Unit) är datorns hjärta. Den har i uppgift att distribuera ström till
+        diverse komponenter i
+        datorn. Detta är en komponent med ett mycket grundligt syfte som ändå är mycket viktigt och kan påverka livstiden
+        av
+        andra komponenter.
+      </p>
+      <div id="leftRight">
+        <div id="leftPart">
+      <h2>Formfaktor</h2>
+      <p class="textType1">Alla moderna nätaggregat följer formfaktor standarden ATX, men längden kan variera. Den allra
+        största skillnaden mellan olika nätaggregat är dess effekt och effektivitet (80+ märkning). Effekten mäts i watt
+        och de flesta nätaggregaten idag varierar mellan ca 500w och 2000w.
+      </p>
+      <p class="textType1">
+        För att välja rätt nätaggregat gäller det att man vet hur mycket ström alla komponenter drar tillsammans.
+        <a href="/komponenter/gpu.html">Grafikkort</a> är kända för att dra mycket ström och kan kräva en del. Därför rekommenderar tillverkare vilken
+        effekt man borde ha på sitt nätaggregat. Vill man vara helt säker på att effekten är tillräcklig, kan man
+        använda sig av en <a target="_blank" href="https://outervision.com/power-supply-calculator">effekträknare</a>.
+      </p>
+      </div>
+      <div id="rightPart">
+        <img src="/img/psu.JPG" alt="Nätaggregat" style="width: 400px;">
+          <br>
+          "<a target="_blank" href="https://commons.wikimedia.org/wiki/File:OCZ_600W_power_supply_unit.JPG"><i>OCZ 600W power supply unit</i></a>", av <i><a
+              target="_blank" href="https://commons.wikimedia.org/wiki/User:Danrok">Danrok</a></i>, licensierad under <a
+            target="_blank" href="https://creativecommons.org/licenses/by-sa/3.0/deed.sv">CC BY-SA 3.0</a>
+      </div>
+      </div>
+      <h2>80+ Märkning</h2>
+      <p class="textType1">
+        Med denna märkning graderas effektiviteten av nätaggregatet. Just idag finns det sex stycken olika märkningar:
+      </p>
+      <img src="/img/80+Stats.jpg" alt="Prestandatabellt" style="width: 600px;">
+      <div class="Lista">
+        <h2>Kontakter</h2>
+        <p class="textType1">Ut från nätaggregatet till komponenterna dras kablar med olika kontakter:
+        <p class="list1">- 24pin</p>
+        <p class="list2">Denna kontakt sätts på och strömförsörjer <a href="/komponenter/moderkort.html">moderkortet</a>. Adaptrar kan användas för stöd av 20pin
+          som används av
+          äldre <a href="/komponenter/moderkort.html">moderkort</a> som inte har PCI-E. </p>
+        <p class="list1">- P4 (2x2-pin)</p>
+        <p class="list2">Började användas då mer el krävdes till <a href="/komponenter/cpu.html">processorn</a> användas med Pentium 4). Idag har
+          kontakten
+          ersatts
+          med EATX12V-kontakten.</p>
+        <p class="list1">- EATX12V</p>
+        <p class="list2">Består av åtta pins vilka kopplas in i <a href="/komponenter/moderkort.html">moderkortet</a> för strömförsörjning av <a href="/komponenter/cpu.html">processorn</a></p>
+        <p class="list1">- 4-pin Molex/5,25”</p>
+        <p class="list2">Strömförsörjning för äldre <a href="/komponenter/lagring.html">hårddiskar</a> och optiska enheter. Idag ersatt med Sata/Sata-power</p>
+        <p class="list1">- Sata-power</p>
+        <p class="list2">Har samma användningsområde som en Molex kontakt men stöd för att ge ut 3,3V.</p>
+        <p class="list1">- PCI-E Power</p>
+        <p class="list2">Strömförsörjning av PCI-E kort såsom <a href="/komponenter/gpu.html">grafikkort</a>. Idag är kontakten 8pin, likt EATX12V.</p>
+        </p>
+      </div>
+      <p class="sourceType1">Källa: <a target="_blank" href="https://www.kjell.com/se/kunskap/hur-funkar-det/dator/stromforsorjning/nataggregatet-i-narbild
+        ">https://www.kjell.com/se/kunskap/hur-funkar-det/dator/stromforsorjning/nataggregatet-i-narbild</a>
+      </p>
+    </main>
     </main>
   </div>
 
   <footer>
-    Footer
-    <!--
-          <p>Skapare: <i>Oscar Eriksson</i> (<a href="http://www.splexserver.se">Hemsida</a>)</p>
-          <p><i>Senast Uppdaterad: 20201005</i></p>
-          -->
+    <p>Skapad av: <i>Oscar Eriksson</i> | Uppdaterad: <i>2020-11-30</i></p> 
   </footer>
   </div>
 </body>

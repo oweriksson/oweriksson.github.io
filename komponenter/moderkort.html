@@ -7,6 +7,7 @@
 
   <title>Hem</title> <!-- Text uppe på hemsidans flik -->
 
+  <link rel="stylesheet" type="text/css" href="/css/text-style.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css"> <!-- Refererar till stylesheet (css/style.css) -->
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -47,37 +48,66 @@
         Komponenter:
       </div>
       <aside>
-        <a id="asideNav" href="moderkort.html">- Moderkort</a>
+        <a id="asideNav" href="/komponenter/chassi.html">- Chassi</a>
         <br>
-        <a id="asideSubNav" href="cpu.html">- Processor/CPU</a>
+        <a id="asideNav" href="moderkort.html">- Moderkort</a>
         <br>
         <a id="asideSubNav" href="ram.html">- Internminne/RAM</a>
         <br>
-        <a id="asideNav" href="pcie.html">- PCI-E Kort</a>
+        <a id="asideSubNav" href="cpu.html">- Processor/CPU</a>
         <br>
         <a id="asideSubNav" href="gpu.html">- Grafikkort/GPU</a>
         <br>
-        <a id="asideSubNav" href="sc.html">- Ljudkort/SC</a>
-        <br>
-        <a id="asideNav" href="psu.html">- Nätaggregat/PSU</a>
-        <br>
         <a id="asideNav" href="lagring.html">- Lagring</a>
         <br>
-        <a id="asideSubNav" href="os.html">- Mjukvara & operativsystem</a>
+        <a id="asideNav" href="psu.html">- Nätaggregat/PSU</a>
       </aside>
     </div>
 
     <main>
       <h1>Moderkort</h1>
+      <p class="textType2">Det är moderkortet som alla komponenter kopplas till, och därför är det viktigt att man vet
+        att alla komponenterna är kompatibla med moderkortet.
+      </p>
+      <div id=leftRight>
+        <div id="leftPart">
+          <h2>Formfaktor & Funktion</h2>
+          <p class="textType1">ATX, mATX (mikro-ATX) och mini-ITX är de tre olika storlekarna som moderkort idag
+            designas
+            till i stationära
+            datorer. ATX används för de större datorerna, anpassade mer för prestanda samtidigt som mATX och mini-ITX är
+            mindre och har ett större syfte att hålla sig kompakt och litet för att få plats i ett litet <a
+              href="/komponenter/chassi.html">chassi</a>.
+          </p>
+          <p class="textType1">Annat än storleken kan moderkort variera på massor av sätt. Vissa stödjer endast några
+            generationer av en AMD
+            eller en Intel <a href="/komponenter/cpu.html">processor</a>. Det finns även en begränsning på <a
+              href="/komponenter/ram.html">internminnets</a> hastighet den klarar av, vilka portar
+            som
+            finns bak och antalet PCI-E slottar.
+          </p>
+          <p class="textType1">Olika moderkort kommer även med olika bios installerade. I bios kan man ställa in
+            inställningar på datorn, debugga
+            (felsöka), på vissa kan man även t.o.m. överklocka olika komponenter.
+          </p>
+          <p class="sourceType1">
+            Källa: <a target="_blank"
+              href="https://www.kjell.com/se/kunskap/hur-funkar-det/dator/datorns-huvudkomponenter/moderkortet">https://www.kjell.com/se/kunskap/hur-funkar-det/dator/datorns-huvudkomponenter/moderkortet</a>
+          </p>
+        </div>
+        <div id="rightPart">
+          <img src="/img/svartmoderkort.jpg" alt="Svart moderkort" style="width: 400px;">
+          <br>
+          "<a target="_blank" href="https://pixy.org/95930/"><i>Motherboard of a computer</i></a>", av <i><a target="_blank"
+              href="https://pixy.org/author/Long_Pyles/">Long Pyles</a></i>, licensierad under <a target="_blank"
+            href="https://creativecommons.org/publicdomain/zero/1.0/deed.sv">CC0</a>
+        </div>
+      </div>
     </main>
   </div>
 
   <footer>
-    Footer
-    <!--
-          <p>Skapare: <i>Oscar Eriksson</i> (<a href="http://www.splexserver.se">Hemsida</a>)</p>
-          <p><i>Senast Uppdaterad: 20201005</i></p>
-          -->
+    <p>Skapad av: <i>Oscar Eriksson</i> | Uppdaterad: <i>2020-11-30</i></p>
   </footer>
   </div>
 </body>
